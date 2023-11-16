@@ -11,10 +11,10 @@ const sinGenero = document.getElementById("sinGenero");
 const noSeSabe = document.getElementById("noSeSabe");
 
 const hamburguesa = document.querySelector('.hamburguesa');
-const filtros = document.querySelector('.filtros-hambu');
+const filtrosHambu = document.querySelector('.filtros-hambu');
 
 hamburguesa.addEventListener('click', () => {
-  filtros.classList.toggle('show');
+  filtrosHambu.classList.toggle('show');
 });
 
 

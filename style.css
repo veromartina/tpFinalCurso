@@ -25,9 +25,9 @@ nav {
 
 .filtros{
     text-decoration: none;
+    list-style-type: none;
     font-size:small;
     color: white;
-    list-style-type: none;
     width: 300%;
     display: flex;
     align-items: center;
@@ -221,8 +221,18 @@ footer{
         border-radius: 5px;
         }
     
-    .filtros.show {
+    .filtros-hambu.show {
+
         display: block;
+        width: 20%;
+        margin-left: 70%;
+        margin-top: -10%;
+        background: none;
+        font-size: x-small;
+        text-decoration: none;
+        list-style-type: none;
+        cursor:pointer;
+
         }
 
     .personajes{ 
