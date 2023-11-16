@@ -1,0 +1,259 @@
+
+body{
+    background-color: #eac8dc;
+    background-image: linear-gradient(225deg, #eac8dc 0%, #784BA0 19%, #78bbea 39%, #e8b361 60%, #d0e471 80%, #e84ad8 100%);
+    margin:0px;
+}
+
+nav {
+   
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border-radius: 10px;  */
+    height: 65px;
+}
+.logo{
+    color: white;
+    font-size:x-large;
+    font-family:cursive;
+    width: 40%;
+    margin-left: 30px;
+   
+}
+
+.filtros{
+    text-decoration: none;
+    font-size:small;
+    color: white;
+    list-style-type: none;
+    width: 300%;
+    display: flex;
+    align-items: center;
+    font-family:cursive;
+   
+   
+}
+
+
+li{
+    margin-right: 5%;
+    font-family:cursive;
+    align-content:flex-end;
+}
+.filtros, .logo :hover{
+    cursor: pointer;
+}
+
+.menu-hamburguesa {
+    position: relative;
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 2% 2% 2% 2%;
+}
+    
+  
+.hamburguesa {
+width: 30px;
+height: 3px;
+background-color: #000;
+margin-bottom: 6px;
+cursor: pointer;
+}
+  
+.hamburguesa span {
+display: block;
+width: 100%;
+height: 3px;
+background-color: #000;
+margin-bottom: 6px;
+}
+  
+.filtros-hambu {
+display: none;
+position: absolute;
+top: calc(100% + 10px);
+left: 0;
+background-color: #fff;
+padding: 10px;
+}
+
+.filtros li {
+margin-bottom: 10px;
+}
+  
+
+.main{
+    display: block;
+}
+
+.cantidad-personajes{
+    font-family: cursive;
+    font-size: medium;
+    color: rgb(212, 208, 208);
+    margin: 15px;
+}
+
+.personajes{
+
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+
+.card{
+    border: solid 4px rgb(179, 172, 172);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(248, 244, 244);
+    border-radius: 5%;
+    box-shadow: #898989;
+    -webkit-box-shadow: 0px 0px 63px 12px #8f8a8b;
+    box-shadow: 0px 0px 63px 12px #3b3b3b;
+    margin:5% 2% 5% 2%;
+    
+}
+
+.card-image img{
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    height:auto;
+}
+
+.card-image:hover {filter: sepia(60%);}
+
+.card-image:hover {-webkit-transform:scale(1.1);transform:scale(1.);
+ }
+
+ .card-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+ }
+
+
+.card-action, button{
+    font-family: cursive;
+    color:rgb(225, 93, 93);
+    width: 100px;
+    box-shadow: #b8b6b6;
+    -webkit-box-shadow: 0px 0px 63px 12px #a39497;
+    box-shadow: 0px 0px 63px 12px #878585;
+    border: none;
+    
+ }
+
+button:hover{
+    cursor: pointer;
+    
+}
+.container-paginador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+    font-size: medium;
+    color: rgb(132, 129, 129);
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin:5%;  
+}
+.pagination, a{
+    margin:5%;
+    color: rgb(69, 68, 68);
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    background: black;
+    color: white;
+    font-size:small;
+    font-family:cursive;
+    
+}
+
+
+@media(max-width:480px){
+
+    body{
+        background: rgb(207, 206, 206);
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background:#9acaec
+    }
+    
+    .filtros{
+    display:none;
+    }
+    .filtros-hambu{
+        
+        width: auto; /* Ajusta el ancho según tus necesidades */
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        }
+    
+    .filtros.show {
+        display: block;
+        }
+
+    .personajes{ 
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+    }
+   
+    .card-image:hover, a {
+        color: rgb(251, 245, 245);
+    }
+
+    .logo{
+        font-size: medium;
+        height: 20px;
+        display: flex;
+        color:rgb(42, 40, 40);
+    }
+    
+    
+    .container-paginador, .cantidad-personajes{
+        color:rgb(42, 40, 40);
+        font-size: small;
+    }
+    
+}
+
+
+    @media(max-width:720px){
+        .personajes{
+            justify-content: space-around;
+        }
+    }
